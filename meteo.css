@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style de base pour le titre */
+h1 {
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* Section pour les informations actuelles de la météo */
+.meteo-actuelle {
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.image-meteo {
+    float: left;
+    margin-right: 15px;
+}
+
+.details-actuels {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.details-actuels h2 {
+    font-size: xx-large;
+}
+
+.details-actuels ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details-actuels ul li {
+    font-size: 1rem;
+}
+
+/* Date et localisation dans le header */
+.date-jour {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Section des prévisions de la semaine */
+.previsions-semaine {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.grille-jours {
+    display: block;
+    overflow: hidden;
+}
+
+.carte {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carte img {
+    width: 100px;
+    height: auto;
+}
+
+.carte h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.carte .temperature {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carte p {
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Styles responsive pour les écrans larges */
+
+/* Écran >640px */
+@media screen and (min-width: 640px) {
+    .grille-jours {
+        display: block;
+    }
+
+    .carte {
+        width: 200px;
+        margin-right: 30px;
+    }
+
+    .details-actuels h2 {
+        font-size: xx-large;
+    }
+}
+
+/* Écran >769px */
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: xxx-large;
+    }
+
+    .previsions-semaine {
+        margin-top: 50px;
+    }
+
+    .carte {
+        width: 220px;
+    }
+
+    .grille-jours {
+        overflow: hidden;
+    }
+
+    .image-meteo {
+        margin-right: 30px;
+    }
+}
